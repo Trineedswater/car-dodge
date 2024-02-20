@@ -21,11 +21,15 @@ Little game in C used to demonstrate basic C programming principles. This reposi
 *Keyboard only!*
 
 ## movement
-w  up
-a left
-s down
-d right
-u undo movement
+w - up
+
+a - left
+
+s - down
+
+d - right
+
+u - undo movement
 
 ## game
 P player
