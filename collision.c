@@ -32,12 +32,16 @@ void check_road_car(position *pos, char **map)
             next_y = cur_y + pos->dx;
             if (map[cur_y][next_x] != '.' || map[next_y][cur_x] != '.')
             {
+                /*Car meets a dead end x.x */
                 /*Reverse the velocity of car (so it either goes back or stays still)*/
                 pos->dx = -(pos->dx);
                 pos->dy = -(pos->dy);
+                next_x = cur_x + pos->dx;
+                next_y = cur_y + pos->dy;
             }
             else
             {
+                /*rotate car clockwise*/
                 temp = pos->dx;
                 pos->dx = -(pos->dy);
                 pos->dy = temp;
@@ -45,6 +49,7 @@ void check_road_car(position *pos, char **map)
         }
         else
         {
+            /*rotate car anticlockwise*/
             temp = pos->dx;
             pos->dx = pos->dy;
             pos->dy = -(temp);
