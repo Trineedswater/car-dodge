@@ -10,11 +10,12 @@ Little game in C used to demonstrate basic C programming principles. This reposi
   - [Making your own map](#making-your-own-map)
 
 # How to run:
-    Compile c files with make and then run executable file with ./traffic
-    ```
-    make
-    ./traffic <name of map file eg. map.txt>
-    ```
+  Compile c files with make and then run executable file with ./traffic
+  
+  ``` bash
+  make
+  ./traffic <name of map file eg. map.txt>
+  ```
 
 # How to play:
 *Keyboard only!*
